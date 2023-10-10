@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Document</title>
+     
+</head>
+<body>
+    <script>
+        function Gps() {
+            navigator.geolocation.getCurrentPosition(function(position){
+                console.log(position);
+            });
+        };
+        //might only work on chrome
+        //chrome://flags/#unsafely-treat-insecure-origin-as-secure (add localhost)
+
+        function search() {
+            navigator.geolocation.getCurrentPosition(function(position){
+                console.log(position);
+            });
+            query = Gps();
+            url ='http://www.google.com/search?q=' + query;
+            window.open(url,'_blank');
+        };
+    </script>
+    <div>
+        Hello this is a test
+    </div>
+    <div>
+        <button onclick="Gps()">Press me</button>
+    </div>
+    <div>
+        <input type="submit" value="" onclick="search();">
+    </div>
+</body>
+</html>

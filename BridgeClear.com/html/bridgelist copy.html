@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #b5b5b5;
+            position: relative;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 55px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .navbar-logo {
+            width: 40px;
+            height: 40px;
+            background-color: #ccc;
+            border-radius: 50%;
+            position: absolute;
+            left: 1%;
+        }
+
+        .search-area {
+            margin: auto;
+            position: relative;
+            text-align: center;
+            height: 80px;
+        }
+
+        .search-bar-itself {
+            margin-top: 40px;
+            padding: 15px;
+            border-style: none;
+            border-radius: 50px;
+            background-color: #f0f0f0;
+            position: relative;
+            width: 40%;
+            height: 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            padding-top: 30px;
+        }
+
+        .left-panel {
+            flex: 1;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-right: 20px;
+            padding: 20px;
+            max-height: 500px;
+        }
+
+        .item-list {
+            flex: 2;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-style: solid;
+            border-color: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .small-item-left {
+            margin: 0px 5px 15px 5px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-style: none;
+            border-color: #f0f0f0;
+            border-radius: 10px;
+        }
+
+        .small-item-right {
+            margin: 0px 5px 15px 5px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            border-style: none;
+            border-color: #f0f0f0;
+            border-radius: 10px;
+            max-width: fit-content;
+        }
+
+        .item-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #ccc;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .item-number {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .item-description {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo"></div>
+    </div>
+    <div class="search-area">
+        <div class="search-bar">
+            <input type="text" placeholder="Enter your destination..." class="search-bar-itself">
+        </div>
+    </div>
+    <div class="container">
+        <div class="left-panel">
+            Vehicle info goes here, on mobile it is collapsed.
+        </div>
+        <div class="item-list">
+            <button class="item">
+                <div class="small-item-left">
+                    <div class="item-icon"></div>
+                </div>
+                <div class="small-item-right">
+                    <div class="item-number">Bridge 1</div>
+                    <div class="item-description">Bridge 1 Description helo helo helohelo helo helohelo helo helo</div>
+                </div>
+            </button>
+            <button class="item">
+                <div class="small-item-left">
+                    <div class="item-icon"></div>
+                </div>
+                <div class="small-item-right">
+                    <div class="item-number">Bridge 1</div>
+                    <div class="item-description">Bridge 1 Description helo helo helohelo helo helohelo helo helo</div>
+                </div>
+            </button>
+            <button class="item">
+                <div class="small-item-left">
+                    <div class="item-icon"></div>
+                </div>
+                <div class="small-item-right">
+                    <div class="item-number">Bridge 1</div>
+                    <div class="item-description">Bridge 1 Description helo helo helohelo helo helohelo helo helo</div>
+                </div>
+            </button>
+            <button class="item">
+                <div class="small-item-left">
+                    <div class="item-icon"></div>
+                </div>
+                <div class="small-item-right">
+                    <div class="item-number">Bridge 1</div>
+                    <div class="item-description">Bridge 1 Description helo helo helohelo helo helohelo helo helo</div>
+                </div>
+            </button>
+            <button class="item">
+                <div class="small-item-left">
+                    <div class="item-icon"></div>
+                </div>
+                <div class="small-item-right">
+                    <div class="item-number">Bridge 1</div>
+                    <div class="item-description">Bridge 1 Description helo helo helohelo helo helohelo helo helo</div>
+                </div>
+            </button>
+            
+            <!-- Add more items as needed -->
+        </div>
+    </div>
+</body>
+</html>
